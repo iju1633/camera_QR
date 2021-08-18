@@ -86,7 +86,6 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-
     }
     
     // 사진이 중복되지 않도록 사진의 이름을 사진이 찍은 일시로 저장하고 이미지 파일을 리턴
@@ -167,9 +166,9 @@ public class MainActivity extends AppCompatActivity {
             // 이미지 뷰에 비트맵을 set하여 이미지 표현
             ((ImageView) findViewById(R.id.iv_result)).setImageBitmap(rotate(bitmap,exifDegree));
 
-
         }
     }
+
     // 사진 촬영 시, user에 따라 다른 각도로 찍기 때문에 뷰에서 알아서 회전한 채로 보여주기 위함
     private int exifOrientationToDegrees(int exifOrientation) {
         if (exifOrientation == ExifInterface.ORIENTATION_ROTATE_90) {
@@ -199,9 +198,4 @@ public class MainActivity extends AppCompatActivity {
             Toast.makeText(getApplicationContext(), "권한이 거부됨",Toast.LENGTH_SHORT).show();
         }
     };
-
-    // QR 코드 리더기 부분
-
-
-
 }
