@@ -30,29 +30,6 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.Locale;
 
-// QR 리더기
-import android.content.Context;
-import android.content.Intent;
-import android.os.Bundle;
-import android.view.KeyEvent;
-import android.view.View;
-import android.view.inputmethod.EditorInfo;
-import android.view.inputmethod.InputMethodManager;
-import android.webkit.WebSettings;
-import android.webkit.WebView;
-import android.webkit.WebViewClient;
-import android.widget.Button;
-import android.widget.EditText;
-import android.widget.TextView;
-import android.widget.Toast;
-
-import androidx.annotation.Nullable;
-import androidx.appcompat.app.AppCompatActivity;
-
-import com.google.zxing.integration.android.IntentIntegrator;
-import com.google.zxing.integration.android.IntentResult;
-import com.journeyapps.barcodescanner.CaptureActivity;
-
 
 import static android.os.Environment.DIRECTORY_PICTURES;
 
@@ -64,11 +41,6 @@ public class MainActivity extends AppCompatActivity {
     private String imageFilePath;
     private Uri photoUri;
 
-    // QR 리더기 구현에 필요한 필드 선언
-    WebView wv;
-    EditText et;
-    Button bt;
-    IntentIntegrator integrator;
 
     // 사진 저장 시 갤러리 폴더에 바로 반영사항을 업데이트 시켜주려면 이 것이 필요하다(기술이름 : 미디어 스캐닝)
     private MediaScanner mMediaScanner;
