@@ -88,7 +88,7 @@ public class MainActivity extends AppCompatActivity {
 
     }
     
-    // 사진이 중복되지 않도록 사진의 이름을 사진이 찍은 일시로 저장하고 이미지 파일을 리턴
+    // 사진이 중복되지 않도록 사진의 이름을 사진이 찍힌 일시로 저장하고 이미지 파일을 리턴
     private File createImageFile() throws IOException {
         String timeStamp = new SimpleDateFormat("yyyyMMdd_HHmmss").format(new Date());
         String imageFileName = "TEST_" + timeStamp + "_";
